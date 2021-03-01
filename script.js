@@ -51,6 +51,12 @@ searchCity.addEventListener('click', async function(e){
     e.preventDefault();
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchBar.value}&units=${unit}&appid=${apiKey}`;
     const response = await fetch(url, {mode:'cors'});
-   const data = await response.json();
-  formatWeather(data);
+    const data = await response.json();
+    try {
+        formatWeather(data);
+    } catch (error) {
+        console.error(error);
+        alert('City was not found');
+    }
+   
 });

@@ -11,11 +11,12 @@
 #weatherCard {
     display: flex;
     font-size: 2em;
-  
 }
+
 #weatherConditionCity {
     font-size: 1.2em;
 }
+
 #mainTempCard {
     border-left: 10px solid white;
     margin-left: 5%;
@@ -35,8 +36,6 @@
     top: 2%;
     left: 87%;
     width: 10%;
-    
-    
 }
 
 .round {
@@ -59,7 +58,8 @@
     z-index: 10;
     border-radius: 10px;
     border: none;
-    background: #000; /* Set the bg image here. with "no-repeat" */
+    background: no-repeat;
+    background-image: url('maginify.jpg');
 }
 
 .search {
